@@ -1,4 +1,6 @@
-export const options = {
+import type { CSSProperties } from "react"
+
+export const options: google.maps.StreetViewPanoramaOptions = {
 	visible: true,
 	disableDefaultUI: true,
 	showRoadLabels: false,
@@ -8,4 +10,10 @@ export const options = {
 	disableDoubleClickZoom: true,
 	linksControl: false,
 	motionTracking: false
+}
+
+export const style: CSSProperties = {
+	height: "calc(100vh + 24px)",
+	width: "100vw",
+	overflow: "hidden"
 }

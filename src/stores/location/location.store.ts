@@ -10,6 +10,12 @@ export const useLocationStore = create<LocationState>()(set => ({
 		lat: 0,
 		lng: 0
 	},
-	setActual: (location: Location) => set(() => ({ actual: location })),
-	setGuess: (location: Location) => set(() => ({ guess: location }))
+	setActual: (location: Location) => {
+		console.log(`setActual: ${location.lat} / ${location.lng}`)
+		set(() => ({ actual: location }))
+	},
+	setGuess: (location: Location) => {
+		console.log(`setGuess: ${location.lat} / ${location.lng}`)
+		set(() => ({ guess: location }))
+	}
 }))

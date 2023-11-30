@@ -1,4 +1,4 @@
-export type Location = google.maps.LatLngLiteral
+import type { Location } from "@/lib/utils/maps.type"
 
 export type LocationState = {
     actual: Location

@@ -4,7 +4,7 @@ import type { ReactElement } from "react"
 
 export default function Home(): ReactElement {
 	return (
-		<main className="w-screen h-screen overflow-hidden flex flex-row items-stretch justify-stretch">
+		<main className="w-screen h-screen overflow-hidden">
 			<StreetView />
 			<MapView zoom={5} />
 		</main>

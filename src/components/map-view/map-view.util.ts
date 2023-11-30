@@ -1,4 +1,4 @@
-import { colors } from "@/lib/colors"
+import { colors } from "@/lib/utils/colors"
 import type { CSSProperties } from "react"
 
 export const options: google.maps.MapOptions = {
