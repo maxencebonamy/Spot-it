@@ -12,7 +12,7 @@ import { options, style } from "./map-view.util"
 import { Loader } from "../loader"
 
 export const MapView = ({ zoom = 50 }: MapViewProps): ReactElement => {
-	const [currentLocation, setCurrentLocation] = useState<Location>({
+	const [currentLocation] = useState<Location>({
 		lat: 47.47229178394306,
 		lng: -0.5460850812616046
 	})

@@ -1,5 +1,6 @@
 import { create } from "zustand"
-import type { LocationState, Location } from "./location.type"
+import type { Location } from "@/lib/utils/maps.type"
+import type { LocationState } from "./location.type"
 
 export const useLocationStore = create<LocationState>()(set => ({
 	actual: {

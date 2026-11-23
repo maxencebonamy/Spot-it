@@ -21,7 +21,7 @@ export const StreetView = (): ReactElement => {
 
 	const { streetView, setStreetView } = useStreetViewStore()
 
-	const onLoad = async(service: google.maps.StreetViewService | null): Promise<void> => {
+	const onLoad = (service: google.maps.StreetViewService | null): void => {
 		if (!service) return
 
 		setStreetView(service)
